@@ -11,13 +11,13 @@ An adapter takes the data from the data set and adapts it to a view. The most ex
 Assume these objects and RecyclerView. Adapter implementation:
 
 ``` kotlin
-data class LineItem (
+data class LineItem(
     val description: String,
     val quantity: Int,
     val price: Long
 )
 
-data class Order (
+data class Order(
     val orderNumber: Int
 ) {
     val lineItems: List<LineItem> = ArrayList()
